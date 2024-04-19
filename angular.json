@@ -25,9 +25,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css" , 
+              "@angular/material/prebuilt-themes/indigo-pink.css"
+
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -96,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e4c0bfed-fe89-48f8-9e3d-4eb55b00869f"
   }
 }

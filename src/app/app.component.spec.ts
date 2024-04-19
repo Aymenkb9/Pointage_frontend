@@ -1,10 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { EscalesListComponent } from './escales-list/escales-list.component';
+import { routes } from './app.routes'; // Importez vos routes
+import { RouterModule } from '@angular/router'; // Importez RouterModule
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppComponent,EscalesListComponent , RouterModule.forRoot(routes)  ],
     }).compileComponents();
   });
 

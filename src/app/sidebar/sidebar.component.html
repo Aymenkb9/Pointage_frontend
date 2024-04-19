@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="sidebar.component.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar collapse">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">
+                        <img src="/assets/images/logo_marsa_maroc.png" alt="Marsa Maroc Logo" class="sidebar-logo-image">
+                    </a>
+                </div>
+                
+                <ul class="sidebar-nav">
+                    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pointage" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-list"></i> Pointage
+                        </a>
+                        <ul id="pointage" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <i class="fas fa-ship"></i> Liste des Escales
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Other sidebar items -->
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <div style="display: flex; align-items: center; gap: 10px; position: relative;">
+                                    <i class="fas fa-globe" style="color: black; font-size: 20px;"></i>
+                                    <div style="background-color: #1E90FF
+                                    ; color: white; font-weight: bold; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-size: 14px;">A</div>
+                                    <div style="position: absolute; width: 10px; height: 10px; background-color: #00FF00; border-radius: 50%; right: 2px; bottom: 2px;"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <!-- Content should be here -->
+                </div>
+            </main>
+            <a href="#" class="theme-toggle">
+                <!-- Theme toggle icons would go here if needed -->
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
