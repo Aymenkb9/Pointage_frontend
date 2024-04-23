@@ -12,7 +12,7 @@ export class EscaleService {
   constructor(private http: HttpClient) { }
 
   getAllEscales(): Observable<Escale[]> {
-    return this.http.get<Escale[]>(this.baseUrl);
+    return this.http.get<Escale[]>(`${this.baseUrl}/escales`); // Utilisez une interpolation de chaîne pour inclure l'URL complète
   }
    
   // Ajoutez d'autres méthodes pour créer, mettre à jour et supprimer des escales si nécessaire
